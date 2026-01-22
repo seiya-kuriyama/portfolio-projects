@@ -39,4 +39,17 @@ The model was validated using the **Nikkei NEEDS-SCAN/PANEL** dataset. Due to li
 
 ---
 
-*Author: Seiki Kuriyama*
+## 3. Market Basket Analysis & Product Recommendation (SQL)
+**File:** `Market_Basket_Analysis.ipynb`
+
+### Description
+This project implements a **Market Basket Analysis (Association Rule Learning)** engine using advanced SQL techniques to discover hidden purchasing patterns in e-commerce transaction data. It focuses on identifying high-frequency co-occurrence relationships to drive cross-selling strategies and improve User Experience (UX).
+
+### Key Features
+* **Advanced SQL Querying:** Utilized **Self-Join** and conditional logic (`o1.id < o2.id`) to efficiently generate unique product combinations without permutation redundancy.
+* **Behavioral Insight Extraction:** Detected specific user contexts (e.g., the "Study Companion" pattern between textbooks and coffee) to propose solutions for reducing customer friction.
+* **Scalable Architecture Design:** Structured the query logic to be compatible with cloud-native distributed SQL engines (e.g., Amazon Athena) for processing large-scale datasets.
+
+### Tech Stack
+* **Language:** Python, SQL
+* **Libraries:** SQLite3, Pandas
